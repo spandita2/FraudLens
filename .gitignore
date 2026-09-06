@@ -1,0 +1,26 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Data (large / regenerable — keep repo light; document how to regenerate instead)
+data/raw/*.csv
+data/processed/*.csv
+
+# Models (regenerable via train_model.py; keep repo light)
+models/*.joblib
+models/*.png
+# Keep metrics.json tracked so evaluation results are visible in the repo:
+!models/metrics.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
