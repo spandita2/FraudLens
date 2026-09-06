@@ -268,8 +268,3 @@ pytest tests/ -v
 - Add a model-monitoring job to detect feature/label drift over time.
 - Containerize with Docker Compose (API + Streamlit + PostgreSQL) for one-command startup.
 
-## Resume Bullets
-
-- Built FraudLens, an end-to-end fraud detection platform in Python — engineered a leakage-aware feature pipeline (Pandas, NumPy, Scikit-learn) with a chronological train/test split and a fit-on-train-only customer-history encoder to prevent temporal data leakage, and trained a Logistic Regression fraud classifier achieving 1.0 recall (0.9675 PR-AUC) on a time-based held-out set under 0.13% class imbalance.
-- Designed and implemented a PostgreSQL schema (SQLAlchemy ORM) and a FastAPI backend exposing real-time fraud-scoring (`/predict`), health-check, and transaction-query endpoints with Pydantic request validation and centralized error handling.
-- Developed an interactive Streamlit + Plotly analytics dashboard providing fraud KPI monitoring, transaction-pattern visualizations, and live risk scoring against the FastAPI backend, backed by a reproducible joblib-serialized ML pipeline.
